@@ -1,1 +1,2 @@
 -Try to reproduce Nintendo website;
+-Pull request will have to be make on 'Develop' branch;
