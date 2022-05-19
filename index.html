@@ -8,11 +8,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="top-navbar.css">
     
     <title>Nintendo</title>
     <link rel="icon" href="Retro-Mario-icon.png" type="image/png" sizes="x-icon">
 </head>
 <body>
-    
+    <nav>
+        <!--top navbar-->
+        <div id="top-nav">
+            <div id="left-nav">
+                <div id="logo"><a href=""><img src="assets/Logo nintendo.png" alt="Logo Nintendo" style="width:69px;height:auto;"></a></div>
+                <div id="searchbar">
+                    <input type="search" id="search" name="search" placeholder="Search games, hardware, news, etc">
+                    <select id="dropdown" name="dropdown">
+                    <option value="all categories">All categories</option>
+                    <option value="games">Games</option>
+                    <option value="hardware">Hardware</option>
+                    <option value="merchandise">Merchandise</option>
+                    <option value="news&events">News & Events</option>
+                    <option value="support">Support</option>
+                    </select>
+                </div>
+            </div>
+                <ul id="right-nav">
+                    <li><a href="">Support</a></li>
+                    <li><a href="">Wish List</a></li>
+                    <li><a href="">Cart</a></li>
+                    <li><a href="">Log in/Sign up</a></li>
+                </ul>
+        </div>
+        <!--end top navbar-->
+    </nav>
 </body>
 </html>

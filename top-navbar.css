@@ -1,0 +1,68 @@
+nav {
+    position: fixed;
+    width: 100%;
+    margin: 0px;
+}
+#top-nav {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-family: var(--nintendofont);
+    color: var(--textclr);
+    font-weight: var(--bodtext);
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: lightgray;
+}
+#top-nav a {
+    text-decoration: none;
+    font-weight: var(--bodtext);
+    font-size: var(--fontsize);
+}
+#right-nav a:hover, a:active {
+color: var(--nintendored);
+}
+#right-nav a:visited {
+    color: var(--textclr);
+}
+#left-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+#logo {
+    width: 7rem;
+    background-color: var(--nintendored);
+    display: flex;
+    align-content:center;
+    justify-content: center;
+}
+#searchbar {
+    width: 27rem;
+    margin: 0.8rem;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: var(--textclr);
+}
+#searchbar:hover {
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: var(--nintendored);
+    cursor: pointer;
+}
+#dropdown {
+    height: 100%;
+    font-size: var(--cardtitle);
+    font-weight: var(--bodtext);
+}
+#search {
+    height: 100%;
+}
+#right-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    list-style-type: none;
+}
+#right-nav li {
+    padding: 0 10px;
+}
