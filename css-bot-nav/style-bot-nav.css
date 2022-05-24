@@ -55,7 +55,7 @@ div.item1-bot-nav>div>ul{
     
     color: var(--textclr);
     font-weight: 300;
-    font-size: 0.775rem;
+    font-size: 0.875rem;
     display: flex;
     gap: 0.35rem;
     align-items: center;
@@ -64,11 +64,6 @@ div.item1-bot-nav>div>ul{
 
 .a-li-bot-nav:hover {
     color: var(--nintendored);
-}
-
-.span-bot-nav {
-    font-weight: var(--boldtext);
-    font-size: var(--fontsize);
 }
 
 .logo-bot-nav {
@@ -112,6 +107,8 @@ div.item1-bot-nav>div>img {
     color: var(--textclr);
     padding: 0;
     align-items: end;
+    font-size: var(--fontsize);
+    font-weight: var(--boldtext);
 }
 
 .btn-stor:focus{
@@ -200,7 +197,7 @@ button.btn-stor:hover{
     display: flex;
     border-bottom: 1px solid #ccc;
     justify-content: center;
-    padding-block: 6px;
+    padding-block: 10px;
     gap: 2rem;
 }
 
@@ -247,11 +244,15 @@ a {
     color: var(--nintendored);
 }
 
+.span-bot-nav {
+    font-weight: var(--boldtext);
+}
+
 .a-games-bot-nav {
     
     color: var(--textclr);
     font-weight: 300;
-    font-size: 0.775rem;
+    font-size: 0.875rem;
 }
 
 div.bottom-nav {
