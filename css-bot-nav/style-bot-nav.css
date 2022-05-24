@@ -1,0 +1,390 @@
+:root {
+    --textclr: rgb(72,72,72);
+    --nintendored: rgb(230, 0, 18);
+    --nintendohover: rgb(172, 0, 13);
+    --nintendofont: 'Roboto', sans-serif;
+    --boldtext: 700;
+    --thintext: 100;
+    --fontsize: 16px:
+    --cardtitle: 1rem;
+    --cardcontent: 0.75rem;
+    --margin: 3rem 0;
+}
+ html {
+     font-size: var(--fontsize);
+     font-style: var(--nintendofont);
+ }
+
+body {
+    margin-inline: 0;
+}
+
+/*.store123 {
+    display: flex;
+    flex-direction: column;
+}*/
+
+.store-bot-nav {
+    display: none;
+    flex: auto;
+    width: -webkit-fill-available;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    position: absolute;
+    background: white;
+    box-sizing: border-box;
+}  
+
+div.item1-bot-nav>div>ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    text-align: left;
+    gap: 0.3rem;
+    margin-top: 0;
+}
+.item1-bot-nav {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;*/
+}
+
+.a-li-bot-nav {
+    
+    color: var(--textclr);
+    font-weight: 300;
+    font-size: 0.775rem;
+    display: flex;
+    gap: 0.35rem;
+    align-items: center;
+    padding-block: 0.1rem;
+}
+
+.a-li-bot-nav:hover {
+    color: var(--nintendored);
+}
+
+.span-bot-nav {
+    font-weight: var(--boldtext);
+    font-size: var(--fontsize);
+}
+
+.logo-bot-nav {
+    display: flex;
+    flex: 100%;
+    flex-wrap: wrap;
+    background-color: var(--nintendored);
+}
+
+.logo-img-bot-nav {
+    margin-inline: auto;
+    margin-block: auto;
+    color: white;
+}
+
+.logo-close-button-bot-nav {
+    margin: 10px;
+    color: white;
+}
+.logo-close-button-bot-nav:hover {
+ cursor: pointer;
+}
+
+.bot-nav-wave {
+     width: 100%;
+    height: 13.9px;
+    background-color: white;
+    background-image: url(../../assets-bot-nav/wave-bot.svg);
+    
+}
+
+div.item1-bot-nav>div>img {
+     width: 2rem;
+}
+
+.btn-stor {
+    border: none;
+    background: transparent;
+    display: flex;
+    gap: 0.3rem;
+    color: var(--textclr);
+    padding: 0;
+    align-items: end;
+}
+
+.btn-stor:focus{
+   color: var(--nintendored);
+    
+}
+
+button.btn-stor:hover{
+    color: var(--nintendored);
+    cursor: pointer;
+}
+
+ .elements-list-bot-nav {
+     display: flex;
+     flex: 1 1 100%;
+     justify-content: space-evenly;
+     padding-inline: 1rem;
+     /*justify-content: center;
+     gap: 2.5rem;*/
+ }
+
+
+ /*to replace file.js in cae it doesn't work'*/
+/*div.store123>button.btn-stor:focus ~ div.store-bot-nav {
+    display: flex;
+}
+
+/*div:hover .store{
+    visibility: visible !important;
+    border-bottom: 1px solid red;
+}*/
+
+.icon-store-ul-bot-nav-red {
+    width: 1.7rem;
+}
+
+#shop-btn-bot-nav {
+    background-color: white;
+    border: 1px solid red;
+    border-radius: 5px;
+    width: 5rem;
+    height: 2rem;
+    font-weight: var(--boldtext);
+    color: var(--textclr);
+    transition: all 180ms linear 0.35s;
+}
+
+@keyframes bounce-in {
+    0% {
+      opacity: 0;
+      transform: scale(1);
+    }
+    
+    35% {
+        opacity: 1;
+        transform: scale(1.12);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.15);
+    }
+    75% {
+        opacity: 1;
+        transform: scale(1.13);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1.15);
+    }
+ }
+
+#shop-btn-bot-nav:hover {
+    cursor: pointer;
+    color: var(--nintendored);
+    background: rgb(230, 0, 18, 0.1);
+    animation: bounce-in 0.6s ease forwards;
+    
+}
+
+/*#shop-all-btn {
+    animation: none !important;
+    transform: none !important;
+}*/
+
+.nav-options {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    justify-content: center;
+    padding-block: 6px;
+    gap: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn-games-bot-nav {
+    background-color: white;
+    border: 1px solid rgb(72, 72, 72);
+    width: 120px;
+    height: 4.25rem;
+    border-radius: 5px;
+    color: var(--textclr);
+    margin-bottom: 0.5rem;
+}
+
+.btn-games-bot-nav:hover {
+    background-color: var(--nintendored);
+    cursor: pointer;
+    color: white;
+    transition-duration: 200ms;
+}
+
+.game-bot-nav {
+    display: none;
+    flex-direction: column;
+    padding: 10px;
+    position: absolute;
+    background: white;
+    width: -webkit-fill-available;
+    padding-bottom: 4px;
+}
+
+.games-bot-nav-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.span-games-bot-nav:hover {
+    color: var(--nintendored);
+}
+
+.a-games-bot-nav {
+    
+    color: var(--textclr);
+    font-weight: 300;
+    font-size: 0.775rem;
+}
+
+div.bottom-nav {
+    font-family: var(--nintendofont);
+    
+}
+
+.game-btns-bot-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.logo-close-btn-bot-nav>a {
+    float: right;
+}
+
+.logo-close-btn-bot-nav:hover {
+    cursor: pointer;
+}
+
+
+
+/*image under nav*/
+.img-under-bot-nav {
+    
+   background: linear-gradient(rgb(0, 169, 215), rgb(255, 255, 255)) 0% 0% / cover repeat;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+/*image under nav*/
+img#logo123 {
+        width: 96%;
+        height: auto;
+        border-radius: 5px;
+}
+
+#a-logo2-under-bot-nav {
+    text-align: center;
+}
+
+div#description-under-bot-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 96%; 
+    margin: auto;
+    padding: 15px;
+}
+
+.description-under-bot-nav-left {
+    display: flex;
+    gap: 2rem;
+    color: var(--textclr);
+    align-items: center;
+}
+
+div#description-unser-bot-nav-right {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+div#description-under-bot-nav-right1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.75rem;
+    line-height: 1rem;
+   justify-content: center;
+   color: var(--textclr);
+}
+
+.line-bot-nav {
+    border-bottom: 1px solid rgb(72, 72, 72);
+    padding: 0.25em 0px;
+}
+
+.line-bot-nav:last-child {
+    border: none;
+}
+
+#btn-under-bot-nav {
+  background-color: var(--nintendored);
+  width: 5rem;
+  height: 2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+#btn-a-bot-nav {
+    
+    color: white;
+    font-weight: 700;
+}
+
+#btn-under-bot-nav:hover {
+    background-color: var(--nintendohover);
+    animation: bounce-in 0.6s ease forwards;
+}
+
+/*.btn-stor:hover .arrow-animation-bot-nav{
+    transform: rotate(180deg);
+}*/
+
+.btn-stor:focus .arrow-animation-bot-nav{
+    transform: rotate(180deg);
+    transition-duration: 200ms;
+}
+
+#switch-btn-bigger{
+    width: 260px;
+}
+
+.button-bot-nav-animation {
+    padding-bottom: 1rem;
+}
+
+.icons-store-bot-nav {
+    color: red;
+}
+
+.nav-btn-close {
+    color: rgb(200, 200, 200);
+}
+
+.nav-btn-close:hover {
+    color: var(--textclr);
+}
+
+#cls-btn-store:hover {
+ color: rgb(200, 200, 200);
+}
