@@ -187,8 +187,8 @@ body {
     }
 }
 
-@media only screen and (max-width: 768px) {
-    #onlinestore,
+@media only screen and (max-width: 1000px) {
+    /*#onlinestore,
     #gamingsystems {
         margin-top: 2rem;
         margin-bottom: 2rem;
@@ -197,10 +197,11 @@ body {
     .gamsys-container {
         margin-left: 1rem;
         margin-right: 1rem;
-    }
+    }*/
     .onstr-btn,
     .gamsys-btn {
         width: 91.7%;
+        justify-self: center;
     }
 }
 
