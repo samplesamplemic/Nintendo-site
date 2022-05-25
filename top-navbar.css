@@ -246,12 +246,46 @@ ul a {
     padding-left: 5px;
     margin-top: 25px;
 }
+.quearynav {
+    height: 60px;
+    width: 80%;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 5px 5px 30px lightgray;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 30px;
+    display: none;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.quearynav:hover {
+    cursor: pointer;
+}
+#hamburger svg, #heart svg, #cart svg, #profile svg {
+    color: var(--textclr);
+}
+#searchicon {
+    border-radius: 40px;
+    background-color: var(--nintendored);
+    color: white;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media screen and (max-width: 1000px){
     #searchbar, #right-nav {
         display: none;
     }
     #top-nav {
         background-color: var(--nintendored);
+    }
+    .quearynav {
+        display: flex
     }
 
     .nav-options {
