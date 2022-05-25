@@ -11,6 +11,16 @@
     --margin: 3rem 0;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--nintendofont);
+    font-size: var(--fontsize);
+    line-height: 1.4;
+    color: var(--textclr);
+}
+
 .dividerstyle {
     display: flex;
     flex-wrap: nowrap;
