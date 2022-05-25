@@ -15,7 +15,6 @@ body {
     margin: 0;
 }
 nav {
-    position: fixed;
     width: 100%;
     margin: 0px;
 }
@@ -317,8 +316,8 @@ ul a {
     div#description-unser-bot-nav-right{
         align-self: center;
     }
-    button {
-        width: 100% !important;
+    /*button {
+        width: 90% !important;
         height: 3rem !important;
-    }
+    }*/
 }
