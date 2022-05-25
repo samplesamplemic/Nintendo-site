@@ -300,10 +300,11 @@ img#logo123 {
 
 div#description-under-bot-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 96%; 
     margin: auto;
     padding: 15px;
+    gap: 13rem;
 }
 
 .description-under-bot-nav-left {
