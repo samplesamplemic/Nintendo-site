@@ -44,6 +44,10 @@
     width: 100%;
 }
 
+div#news-pad {
+    display: flex;
+}
+
 .data-news {
     font-family: var(--nintendofont);
     font-size: 300;

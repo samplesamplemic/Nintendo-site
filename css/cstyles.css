@@ -148,10 +148,10 @@ body {
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
-    .char-maincontainer {
+   /* .char-maincontainer {
         margin-left: 1rem;
         margin-right: 1rem;
-    }
+    }*/
     .char-gridcontainer {
         grid-template-columns: repeat(2, 1fr);
     }
