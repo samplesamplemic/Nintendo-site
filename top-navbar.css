@@ -256,7 +256,7 @@ ul a {
     height: 60px;
     width: 80%;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     background-color: white;
     box-shadow: 5px 5px 30px lightgray;
     border-radius: 50px;
@@ -307,12 +307,12 @@ ul a {
     }
     div#description-under-bot-nav {
         flex-direction: column;
-        gap: 2rem;
+        gap: 1.5rem;
         width: auto;
     }
     .description-under-bot-nav-left {
         flex-direction: column;
-        gap: 0;
+        gap: 2rem;
         text-align: center;
     }
     div#description-unser-bot-nav-right{

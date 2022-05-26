@@ -46,6 +46,7 @@
 
 div#news-pad {
     display: flex;
+    justify-content: center;
 }
 
 .data-news {

@@ -171,6 +171,7 @@ body {
     z-index: 1;
 }
 
+
 @media only screen and (min-width:768px) {
     .onstr-grid,
     .gamsys-grid {
@@ -184,6 +185,10 @@ body {
     .onstr-imgwrapper,
     .gamsys-imgwrapper {
         grid-column: 1 / span 2;
+    }
+
+    .onstr-btn {
+        right: 1rem;
     }
 }
 
@@ -200,14 +205,21 @@ body {
     }*/
     .onstr-btn,
     .gamsys-btn {
-        width: 91.7%;
+        width: 89%;
         justify-self: center;
+        
     }
+    
 }
 
 @media only screen and (max-width: 530px) {
     .onstr-btn,
     .gamsys-btn {
         width: 89%;
+    }
+
+    .onstr-btn{
+        right: auto;
+        
     }
 }
