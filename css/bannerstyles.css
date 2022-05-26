@@ -1,0 +1,225 @@
+:root {
+    --textclr: rgb(72, 72, 72);
+    --nintendored: rgb(230, 0, 18);
+    --nintendohover: rgb(172, 0, 13);
+    --nintendofont: 'Roboto', sans-serif;
+    --boldtext: 700;
+    --thintext: 100;
+    --fontsize: 16px;
+    --cardtitle: 1rem;
+    --cardcontent: 0.75rem;
+    --margin: 3rem 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--nintendofont);
+    font-size: var(--fontsize);
+    line-height: 1.4;
+    color: var(--textclr);
+}
+
+.dividerstyle {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+    position: relative;
+}
+
+.dividerline {
+    width: 100%;
+    margin: 0px;
+    position: relative;
+    z-index: 5;
+    border-width: 0.0625rem 0px 0px;
+    border-bottom-style: initial;
+    border-bottom-color: initial;
+    border-left-style: initial;
+    border-left-color: initial;
+    border-right-style: initial;
+    border-right-color: initial;
+    border-top-style: solid;
+    border-top-color: rgb(218, 218, 218);
+    height: 0px;
+    color: inherit;
+}
+
+#onlinestore,
+#gamingsystems {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    position: relative;
+    width: 100%;
+}
+
+.onstr-container,
+.gamsys-container {
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 71.5rem;
+}
+
+.onstr-grid,
+.gamsys-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    justify-items: start;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+#onlinestore h1,
+#gamingsystems h1 {
+    font-size: 1.75rem;
+    font-weight: var(--boldtext);
+    letter-spacing: 0px;
+    line-height: 1.35;
+    margin: 0px 0px 1em;
+    padding: 0px;
+}
+
+.onstr-imgwrapper,
+.gamsys-imgwrapper {
+    color: inherit;
+    text-decoration: none;
+    width: 100%;
+}
+
+.onstrpic,
+.gamsyspic {
+    display: block;
+    min-height: 1px;
+    width: 100%;
+}
+
+#onlinestore p,
+#gamingsystems p {
+    font-weight: 400;
+    min-height: 1rem;
+    font-size: 1.3125rem;
+}
+
+.onstr-btn,
+.gamsys-btn {
+    height: 3rem;
+    padding: 0px 1.5rem;
+    width: auto;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 300ms ease-in-out 0s;
+    font-weight: 700;
+    font-size: 1rem;
+    white-space: nowrap;
+    border: unset;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.onstr-btn:hover::before,
+.gamsys-btn:hover::before {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(172, 0, 13);
+    background-color: rgb(172, 0, 13);
+    transition: all 300ms ease-in-out 0s;
+    padding: 5px;
+    top: -5px;
+    left: -5px;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+}
+
+.onstr-btn::before,
+.gamsys-btn::before {
+    box-sizing: content-box;
+    display: block;
+    content: "";
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(230, 0, 18);
+    background-color: rgb(230, 0, 18);
+    height: calc(100% - 2px);
+    width: calc(100% - 2px);
+    top: 0px;
+    left: 0px;
+    padding: 0px;
+    border-radius: 0.25rem;
+    position: absolute;
+    transition: all 300ms ease-out 25ms;
+    animation-timing-function: ease-out;
+    animation-duration: 300ms;
+}
+
+.onstr-btn span,
+.gamsys-btn span {
+    order: initial;
+    z-index: 1;
+}
+
+
+@media only screen and (min-width:768px) {
+    .onstr-grid,
+    .gamsys-grid {
+        grid-template-columns: auto 1fr;
+        gap: 2rem;
+    }
+    #onlinestore h1,
+    #gamingsystems h1 {
+        grid-column: 1 / span 2;
+    }
+    .onstr-imgwrapper,
+    .gamsys-imgwrapper {
+        grid-column: 1 / span 2;
+    }
+
+    .onstr-btn {
+        right: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    /*#onlinestore,
+    #gamingsystems {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .onstr-container,
+    .gamsys-container {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }*/
+    .onstr-btn,
+    .gamsys-btn {
+        width: 89%;
+        justify-self: center;
+        
+    }
+    
+}
+
+@media only screen and (max-width: 530px) {
+    .onstr-btn,
+    .gamsys-btn {
+        width: 89%;
+    }
+
+    .onstr-btn{
+        right: auto;
+        
+    }
+}

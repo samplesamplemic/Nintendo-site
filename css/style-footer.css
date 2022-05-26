@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --textclr: rgb(72, 72, 72);
+    --nintendored: rgb(230, 0, 18);
+    --nintendohover: rgb(172, 0, 13);
+    --nintendofont: 'Roboto', sans-serif;
+    --boldtext: 700;
+    --thintext: 100;
+    --fontsize: 16px;
+    --cardtitle: 1rem;
+    --cardcontent: 0.75rem;
+    --margin: 3rem 0;
+}
+
+.brandbar-cont {
+    background-color: rgb(230, 0, 18);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 2.25rem 1rem;
+    flex-wrap: wrap;
+}
+
+.ft-nintendologo {
+    color: white;
+}
+
+.icon-footer {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 450px) {
+    .brandbar-cont {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

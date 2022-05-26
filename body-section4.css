@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--nintendofont);
+}
+
+h2{
+    color: var(--textclr);
+    font-family: var(--boldtext);
+    size: var(--cardtitle);
+}
+
+.titolo {
+    display: flex;
+    gap: 25px;
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 71.5rem;
+}
+
+.titolo1{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    position: relative;
+    width: 100%;
+}
+
+.price, .gioco {
+    color: var(--textclr);
+    text-decoration: none;
+    font-family: var(--thintext);
+    size: var(--cardcontent);
+}
+
+.switch {
+    color: var(--textclr);
+    size: var(--cardcontent);
+    margin-bottom: 10px;
+}
+
+.see {
+    color: var(--nintendored);
+}
+
+:hover.titolo {
+    color: var(--nintendohover);
+}
+
+:hover.see{
+    color: var(--nintendohover);
+}
+
+.hearth {
+    color: var(--nintendored);
+}
+
+:hover.hearth{
+    color: var(--nintendohover);
+}
+
+.carosello1 .carosello2 {
+    display: flex;
+    flex-direction: row;
+}
+.carosello1 {
+    margin: 0 2rem 3rem;
+}
+
+.carosello {
+    overflow:scroll;
+    overflow-y: hidden;
+    display: flex;
+    gap: 25px;
+}
+
+.titolo + .carosello {
+    margin: var(--margin);
+}
+
+.price {
+    margin-top: 25px;
+}
+
+.card, .card-2 {
+    border: solid .1px lightgray;
+    border-radius: 0.25rem;
+    width: min-content;
+}
+.card img, .card-2 img {
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.switch-hearth {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.gioco + .switch {
+    margin-top: 30px;
+}
+
+
+.digital-best {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    width: 100%;
+}
+
+.digital-new {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    position: relative;
+    width: 100%;
+}
+
+.carosello2 {
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 71.5rem;
+}
+
+.card:hover, .card-2:hover {
+    cursor: pointer;
+}
+.cardpadding {
+    padding: 0px 1rem;
+}
+.gioco:hover {
+    color: var(--nintendored);
+}
+
+p.switch {
+    display: flex;
+    align-items: center;
+}
