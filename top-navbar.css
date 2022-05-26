@@ -84,6 +84,7 @@ nav {
     flex-direction: row;
     justify-content: end;
     list-style-type: none;
+    align-items: center;
 }
 #right-nav li {
     padding: 0 10px;
@@ -319,10 +320,7 @@ ul a {
     /*button {
         width: 90% !important;
         height: 3rem !important;
-<<<<<<< HEAD
     }*/
 }
-=======
-    }
-}
->>>>>>> 51995e6faf82a2d7df4f36a072553b1452c9c334
+    
+
